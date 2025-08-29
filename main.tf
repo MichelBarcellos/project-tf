@@ -23,7 +23,7 @@ resource "aws_security_group" "terra-sg" {
 
 
   ingress {
-    description = "Liberado para o mundo"
+    description = "Liberado para o mundo2"
     from_port   = 3001
     to_port     = 3001
     protocol    = "tcp"
@@ -46,7 +46,7 @@ resource "aws_instance" "bia-dev" {
 
   tags = {
     ambiente = "dev"
-    Name = "instance-tf"
+    Name = var.instance-name
     
   }
   vpc_security_group_ids = [aws_security_group.terra-sg.id]
