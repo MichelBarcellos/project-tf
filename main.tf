@@ -23,7 +23,7 @@ resource "aws_security_group" "terra-sg" {
 
 
   ingress {
-    description = "Liberado para o mundo2"
+    description = "Liberado para o mundo"
     from_port   = 3001
     to_port     = 3001
     protocol    = "tcp"
